@@ -8,10 +8,15 @@
  
 </head>
 <body>
-    <h1>ENSALLANDO EL SCRIPT</h1>
+    <h1 id="username"></h1>
 
-    <script type="text.html"></script>
-    <script src="text.html"></script>
-    
+  <script>
+      var username=document.getElementById('username');
+      var question = prompt('Cual es su nombre de usuario?');
+      if(question)
+      username.innerHTML = "welcome: " + question;
+      else 
+      username.innerHTML = "wuelcome: guess";
+      </script>
 </body>
 </html>
