@@ -1,0 +1,12 @@
+body{ background-color: azure;}
+article{
+    background-color: aqua;
+    margin: 100px auto;
+    width: 480px;
+}
+article h1 {
+    text-align: center;
+}
+article p {
+    text-align: justify;
+}
