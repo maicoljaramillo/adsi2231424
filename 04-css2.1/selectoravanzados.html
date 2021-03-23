@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>advance selector</title>
+    <style>
+ul>li{
+    background-color: violet;
+    margin:10px;
+    padding:5px;
+}
+ul li+li+li{
+ background-color: green;
+ margin:0px;
+ padding: 0px;
+}li[class]{
+    background-color:yellow;
+}
+
+    </style>
+</head>
+<body>
+    <h1>ADVANCE SELECTOR</h1>
+    <hr>
+    <h2>children selector: ul>li</h2>
+    <h2>adjacent selector: ul li+li+li</h2>
+    <h2>attribute selector:li[class]</h2>
+    <ol>
+        <li>
+            BIENVENIDO
+            <ul>
+                <li class="highlight">BIEN PUEDA</li>
+                <li>ESCOJA UNA DE ESTAS</li>
+                <li>PERRO HIJO DE TUTA</li>
+                <li>PERRO HIJO DE TUTA</li>
+            </ul>
+        </li>
+        <li>
+            COMIENZA
+            <ul>
+                <li class="highlight">YA PUES </li>
+                <li>DEJE DE </li>
+                <li>SER TAN BAGO</li>
+                <li>PERRO HIJO DE TUTA</li>
+            </ul>
+        </li>
+    </ol>
+</body>
+</html>
