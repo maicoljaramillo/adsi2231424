@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sección 1: navBar -->
+        <div class="section">
+            <!-- Organismo 1: componente navBar -->
+            <nav class="nav-extended blue darken-3">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo">
+                        <img src="descarga.jpg" width="60px" height="60px" alt="">
+                    </a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="formulario.html">Formulario</a></li>
+                        <li><a href="#">Components</a></li>
+                        <li><a href="#">JavaScript</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Sección 2: Formulario con 3 filas -->
+        <div class="section">
+            <!-- Fila 1 -->
+            <div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input type="text" name="user_name" id="user_name">
+                        <label for="user_name">Nombre completo</label>
+                    </div>
+                </div>
+            </div>
+            <!-- Fila 2 -->
+            <div class="row">
+                <div class="input-field col s6">
+                    <i class="material-icons prefix">back_hand</i>
+                    <input type="number" name="user_age" id="user_age" class="validate">
+                    <label for="user_age">Edad</label>
+                </div>
+                <div class="input-field col s6">
+                    <i class="material-icons prefix">phone</i>
+                    <input type="tel" name="user_tel" id="user_tel">
+                    <label for="user_tel">Telefono</label>
+                </div>
+            </div>
+            <!-- Fila 3 -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">mark_email_read</i>
+                    <input type="email" name="user_email" id="user_email">
+                    <label for="user_email">Correo electrónico</label>
+                </div>
+            </div>
+
+            <!-- Sección de botones -->
+            <div class="row center">
+                <div class="col s12">
+                    <a class="btn-floating btn-large waves-effect waves-light blue darken-3" onclick="capturaValoresInput()">
+                        <i class="material-icons">add</i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Sección de resultado -->
+            <div class="row center">
+                <div class="col s12">
+                    <!-- Etiqueta que se utiliza para ver salidas o resultados -->
+                    <output id="verNombre"></output>
+                    <output id="verEdad"></output>
+                    <output id="verCorreo"></output>
+                    <output id="verTelefono"></output>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- Compiled and minified JavaScript -->
+<script src="js/formulario.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</html>
