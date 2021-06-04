@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>REGISTRO CLIENTE</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">Logo</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <a href="#!" class="brand-logo"><i class="material-icons">cloud</i></a>
+            <a href="#!" class="brand-logo"><i class="material-icons">home</i></a>
+            <a href="#!" class="brand-logo"><i class="material-icons">account_circle</i></a>
+           
+          </ul>
+        </div>
+      </nav>
+      <div class="container">
+    <h4><b>CADRASTA CLIENTE<b></h4>
+      <div class="section">
+        <div class="row">
+          <div class="input-field col s5">
+            <i class="material-icons prefix">account_circle</i>
+            <input type="text" name="user_name" id="user_name">
+            <label for="user_name">Nombre completo</label>
+        </div>
+          <div class="input-field col s5">
+            <i class="material-icons prefix">back_hand</i>
+            <input type="number" name="cedula" id="cedula" class="validate">
+            <label for="cedula">CEDULA</label>
+        </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="row">
+          <div class="input-field col s5">
+            <i class="material-icons prefix">email</i>
+            <input type="email" name="email" id="email">
+            <label for="email">CORREO ELECTRONICO</label>
+        </div>
+          <div class="input-field col s5">
+            <i class="material-icons prefix">phone</i>
+            <input type="number" name="tel" id="tel" class="validate">
+            <label for="tel">Telefono</label>
+        </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="row">
+          <div class="input-field col s5">
+            <i class="material-icons prefix">phone</i>
+            <input type="number" name="tele" id="tele">
+            <label for="tele">TELEFONO 2</label>
+        </div>
+          <div class="input-field col s5">
+            <i class="material-icons prefix">phone</i>
+            <input type="number" name="telef" id="telef" class="validate">
+            <label for="telef">TELEFONO 3</label>
+        </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="row">
+          <div class="input-field col s5">
+            <i class="material-icons prefix">home</i>
+            <input type="text" name="dcasa" id="dcasa">
+            <label for="dcasa">DIRECCION DE CASA</label>
+        </div>
+          <div class="input-field col s5">
+            <i class="material-icons prefix">home</i>
+            <input type="text" name="doficina" id="doficina" class="validate">
+            <label for="doficina">DIRECCION DE OFICINA</label>
+        </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="row">
+          <div class="input-field col s5">
+            <i class="material-icons prefix">home</i>
+            <input type="text" name="barrio" id="barrio">
+            <label for="barrio">BARRIO</label>
+        </div>
+          <div class="input-field col s5">
+            <i class="material-icons prefix">home</i>
+            <input type="text" name="of" id="of" class="validate">
+            <label for="of">OFICINA</label>
+        </div>
+        </div>
+      </div>
+      <div class="input-field col s5">
+      
+        <input type="submit" name="of" id="of" class="validate" onclick="capturaValoresInput()">
+        
+    </div>
+    <div class="row center">
+      <div class="col s12">
+          <!-- Etiqueta que se utiliza para ver salidas o resultados -->
+          <output id="verNombre"></output>
+          <output id="vercedula"></output>
+          <output id="veremail"></output>
+          <output id="vertele"></output>
+      </div>
+  </div>
+    
+    
+</body>
+<script src="js/formulario.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</html>
